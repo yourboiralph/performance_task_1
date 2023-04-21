@@ -2,7 +2,10 @@
 isNotAllowed = true;
 do{
     let enteredNumber = prompt("How old are you?");
-        if(enteredNumber < 25){
+        if(enteredNumber == null){
+            alert("Please enter a number!!!");
+        }
+        else if(enteredNumber < 25){
             alert("Your age is " + enteredNumber +" and is not allowed in this website ;)")
         }
         else if(enteredNumber >= 25 && enteredNumber <= 100){
@@ -23,13 +26,16 @@ let isAbove25 = confirm("Are you above 25 years old?");
         alert("User is below 25!")
     }
 let numberLessThan100 = prompt("enter a number");
-    if(numberLessThan100 < 100){
+    if(numberLessThan100 == null){
+        alert("Please enter a number!!1")
+    }
+    else if(numberLessThan100 < 100){
         alert("User entered less than 100");
     }
-    if(numberLessThan100 == 100){
+    else if(numberLessThan100 == 100){
         alert("User entered equal to 100");
     }
-    if(numberLessThan100 > 100){
+    else if(numberLessThan100 > 100){
         alert("User entered above 100");
     }
 
